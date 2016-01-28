@@ -1,0 +1,342 @@
+/*************************
+COLORS
+**************************/
+
+nav.main ul           {border-color: black; 
+                       background: rgba(0,0,0,0.7);}
+
+nav.main a:hover      {color: red;}
+
+nav a, nav a:visited  {color: white;}
+
+nav a.active          {border-top: red;
+                       color: red;}
+
+.resume a             {color: black;}
+
+#projects             {background: #EEEFE5;}
+
+.grid-item            {background: white;}
+
+.item-btm span        {background: gray;
+                       color: black;}
+
+a:hover, a:visited    {color:black;
+}
+
+.item-btm span:hover {background: red;
+                      color: white;}
+
+.overlay              {background: rgba(0,0,0,.70);}
+.overlay h2           {color: #FFF}
+.overlay h3           {color: #cfcfcf;}
+.overlay li           {color: #FFF;
+                       background: red;}
+
+/***************
+GENERAL STYLES
+*****************/
+html,body {
+  height:100%;
+  margin:0;
+}
+
+body {
+  font-family: 'Merriweather', sans-serif;
+  text-align: center;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+div.wrapper {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 6%;  
+}
+
+
+/*************************
+NAVIGATION
+**************************/
+nav.main {
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  z-index: 999;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+nav.main ul {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  /*zoom: 1;*/
+  display: block;
+  border-top: 2px solid;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+}
+
+nav.main li {
+  display:inline-block;
+  margin-right: 5px;
+  padding-bottom: 0px;
+}
+
+nav.main a {
+  display: block;
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+
+nav.main a:hover {
+  text-decoration: none;
+}
+
+nav a, nav a:visited {
+  padding: 10px;
+}
+
+nav a.active  {
+  border-top: 3px solid;
+}
+
+/**********************
+INTRO SECTION
+***********************/
+
+h1 {
+	font-size: 2.0em;
+	text-align: center;
+  margin-top: 35px;
+  margin-bottom: 29px;
+}
+
+h2 {
+	font-size: 1em;
+}
+
+#photo {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 50px auto 0px;
+  border-radius: 50%;  
+}
+
+#home {
+  background: url(../img/photo.jpg);
+  background-position:center center;
+  background-size: cover;
+  padding-top: 0px;
+  height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+}
+
+.resume {
+  text-align: center;
+  margin: 0;
+  font-size: .75em;  
+}
+
+.resume a {
+  font-weight: normal;
+}
+
+.resume a:hover {
+  font-weight: bold;
+}
+
+#banner-home {
+  width: 100%;
+  background: url(../img/banner-contact.jpg) no-repeat left top/cover;
+  height: 4%;
+  opacity: .9;
+  display: block;
+}
+
+/***********************************
+PROJECTS PORTFOLIO
+************************************/
+
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after,
+.container:after,
+.container-fluid:after,
+.row:after {
+  clear: both;
+}
+
+#projects {
+  padding-top: 2px;
+}
+
+.grid-item {
+  width: 84%;
+  border-radius: 2%; 
+  padding: 0;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  text-align: center;
+  display: inline-block;
+}
+
+.grid-item img {
+  min-height: 150px
+}
+
+.container {
+  padding: 5%;
+}
+
+.item-top:hover img {
+  transform: scale(1.5);
+  transition:transform 3s linear;
+}
+
+.item-top {
+  padding: 3px;
+  background-position: center center;
+  background-size: 364px 243px;
+  overflow: hidden;
+  position: relative;
+}
+
+.item-btm {
+  font-size: 0.75em;
+  padding: 20px;
+  text-align: left
+}
+
+.item-btm div {
+  text-align: right;
+  margin-top: 8px;
+  vertical-align: baseline;
+}
+
+.item-btm p {
+  text-align: left;
+}
+
+.item-btm span {
+  padding: 5px 10px 5px 10px;
+  border-radius: 5%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.item-btm a {
+  text-decoration: none;
+}
+
+/*Gallery Overlay*/
+
+.overlay {  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align:center;
+  border-top-left-radius:2%;
+  border-top-right-radius: 2%;
+  opacity:0;
+}
+
+.overlay h2  {
+  font-weight:900;
+  font-size:1.3em;
+}
+
+.overlay h3 {
+  font-style:italic;
+  font-size:1em;
+  margin-bottom: 1em;
+}
+
+.overlay li {
+  line-height: 32px;
+  display: inline;
+  border-radius: 4px;
+  font-size: .7em;
+  padding: 2px 4px;
+}
+
+.item-top:hover .overlay {
+  opacity:1;
+}
+
+/************************************
+CONTACT SECTION
+*************************************/
+
+#contact {
+  background: url(../img/furley_bg.png);
+  padding-top: 5px;
+  height: 100vh;
+  margin: 0;
+}
+
+.contactinfo {
+  margin: 30px 0 0 0;
+}
+
+h3.contactinfo {
+  font-weight: bold;
+  font-size: 1.0em;
+}
+
+/***************
+Google Maps 
+*****************/
+
+#map {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1000px;
+  height: 210px;
+}
