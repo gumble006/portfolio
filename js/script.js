@@ -319,15 +319,5 @@ nav.find('a').on('click', function () {
 });
 
 
-// Portfolio - Masonry.js 
-
-// $('.grid').masonry({
-//   // options
-//   itemSelector: '.grid-item',
-//   fitWidth: true,
-//   percentPosition: true,
-//   columnWidth: 20
-// });
-
 
 });

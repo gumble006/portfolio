@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Greg Adams | Web Development</title>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     
@@ -24,13 +26,13 @@
     <div class="wrapper">
       <h1>Greg Adams</h1>
       
-      <h2>I am a web developer currently living in the Portland, OR area. I enjoy building responsive and user-friendly sites.  If you are looking to improve your presence on the web you can contact me <a href="#contact">here.</a></h2>
+      <h2>I am a web developer in the Portland, OR area. I enjoy building responsive and user-friendly web applications and sites.  If you are looking to improve your presence on the web you can contact me <a href="#contact">here.</a></h2>
 
-      <h2>I have a diverse set of skills, ranging from design and development (HTML, CSS, JavaScript), all the way to back-end frameworks (i.e. Node.js/Express) and Linux.
+      <h2>I have a diverse set of skills, ranging from design and development (HTML, CSS, JavaScript), all the way to back-end development using open-source technologies (i.e. Node.js/Express/MongoDB) and Linux.
       </h2>
-      <img src="img/Greg.png" id="photo">
+      <img src="img/Greg.png" id="photo" alt="Greg Adams photo">
       <div class="resume">
-        <h3><a href="/Adams-Resume-Jan2016.pdf">VIEW RESUME</a> | <a href="https://github.com/gumble006">GITHUB</a></h3><br>
+        <h3><a href="/Adams-Resume-Apr2016.pdf">VIEW RESUME</a> | <a href="https://github.com/gumble006">GITHUB</a></h3><br>
       </div>
     </div>
     
@@ -55,29 +57,91 @@
 
           <div class="grid-item">
             <div class="item-top">
-              <a href="/webgurus/">
-              <img src="img/webgurusThumb.png" class="img-responsive">
+              <a href="" data-toggle="modal" data-target="#Modal1">
+              <img src="img/bridgetowngigsThumb.png" class="img-responsive" alt="Bridgetowngig screenshot thumbnail">
               <div class="overlay">
-                <h2 class="gallerytext">WebGurus</h2><h3>Responsive marketing site</h3>
+                <h2 class="gallerytext">BridgetownGIG</h2><h3>Job board for Portland talent</h3>
                 <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>jQuery</li>
+                  <li>AngularJS</li>
+                  <li>Node.js</li>
+                  <li>MongoDB</li>
+                  <li>Express</li>
                 </ul>    
               </div></a>
             </div>
           
             <div class="item-btm">  
-              <p>WebGurus is an example marketing website created to showcase contemporary site design and layout.</p>
-              <br><div><a href="/webgurus/"><span>See Site</span></a></div>
+              <p>BridgetownGIG is an AngularJS job board application with filtering and CRUD operations using the MEAN stack.</p>
+              <br><div><a href="" data-toggle="modal" data-target="#Modal1"><span>More Info</span></a></div>
             </div>
           </div>
 
 
           <div class="grid-item">
             <div class="item-top">
-              <a href="/ajax/">
-              <img src="img/ajaxThumb.png" class="img-responsive">
+              <a href="" data-toggle="modal" data-target="#Modal2">
+              <img src="img/taqueriacrawlThumb.png" class="img-responsive" alt="TaqueriaCrawl screenshot thumbnail">
+              <div class="overlay">
+                <h2 class="gallerytext">TaqueriaCrawl</h2><h3>Social media for Mexican restaurants</h3>
+                <ul>
+                  <li>Node.js</li>
+                  <li>MongoDB</li>
+                  <li>Express</li>
+                </ul>    
+              </div></a>
+            </div>
+          
+            <div class="item-btm">  
+              <p>TaqueriaCrawl enables anyone to publish and access information on great Mexican food spots in Portland.</p>
+              <br><div><a href="" data-toggle="modal" data-target="#Modal2"><span>More Info</span></a></div>
+            </div>
+          </div>
+
+          <div class="grid-item">
+            <div class="item-top">
+              <a href="" data-toggle="modal" data-target="#Modal3">
+              <img src="img/surftourThumb.png" class="img-responsive" alt="Surf Tour Company screenshot thumbnail">
+              <div class="overlay">
+                <h2 class="gallerytext">Surf Tour Co.</h2><h3>Visual marketing site</h3>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS Frameworks</li>
+                </ul>    
+              </div></a>
+            </div>
+          
+            <div class="item-btm">  
+              <p>Surf Tour Company is an example marketing site built to showcase Bootstrap's grid system and fully-responsive layout.</p>
+              <br><div><a href="" data-toggle="modal" data-target="#Modal3"><span>More Info</span></a></div>
+
+            </div>
+          </div>
+
+          <div class="grid-item">
+            <div class="item-top">
+              <a href="" data-toggle="modal" data-target="#Modal4">
+              <img src="img/webgurusThumb.png" class="img-responsive" alt="Webgurus screenshot thumbnail">
+              <div class="overlay">
+                <h2 class="gallerytext">WebGurus</h2><h3>Responsive marketing design</h3>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>    
+              </div></a>
+            </div>
+          
+            <div class="item-btm">  
+              <p>WebGurus is an example marketing landing page created to showcase contemporary site design and layout.</p>
+              <br><div><a href="" data-toggle="modal" data-target="#Modal4"><span>More Info</span></a></div>
+            </div>
+          </div>
+
+
+          <div class="grid-item">
+            <div class="item-top">
+              <a href="" data-toggle="modal" data-target="#Modal5">
+              <img src="img/ajaxThumb.png" class="img-responsive" alt="AJAX fun screenshot thumbnail">
               <div class="overlay">
                 <h2 class="gallerytext">AJAX Fun</h2><h3>Geolocation-driven app</h3>
                 <ul>
@@ -88,33 +152,12 @@
             </div>
           
             <div class="item-btm">  
-              <p>AJAX Fun is an application making use of Geolocation, WalkScore, Flickr, and OpenWeather APIs to display location-specific content.</p>
+              <p>AJAX Fun is a location-driven app making use of Geolocation, WalkScore, Flickr, and OpenWeather APIs.</p>
               <br>
-              <div><a href="/ajax/"><span>See Site</span></a></div>
-            </div>
-          </div>
-
-
-          <div class="grid-item">
-            <div class="item-top">
-              <a href="/surftour/">
-              <img src="img/surftourThumb.png" class="img-responsive">
-              <div class="overlay">
-                <h2 class="gallerytext">Surf Tour Co.</h2><h3>Visual marketing site</h3>
-                <ul>
-                  <li>HTML</li>
-                  <li>Front-End Frameworks</li>
-                </ul>    
-              </div></a>
-            </div>
-          
-            <div class="item-btm">  
-              <p>Surf Tour Company is an example marketing site built to showcase Bootstrap's grid system and fully-responsive layout.</p>
-              <br><div><a href="/surftour/"><span>See Site</span></a></div>
+              <div><a href="" data-toggle="modal" data-target="#Modal5"><span>More Info</span></a></div>
             </div>
           </div>
         </div>
-  
   </div>
 
 
@@ -137,14 +180,174 @@
     <h3 class="contactinfo">adamsgreg100 -at- gmail.com</h3>
     <p class="contactinfo" >&copy; 2016 Greg Adams</p>
     </div>
-  </div>       
+  </div>  
+
+      
+  
   </body>
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="js/jquery.windows.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="//maps.googleapis.com/maps/api/js"></script>
 </html>
 
 
 
 
+<!-- ==============================================
+    MODALS**********************
+    =============================================== -->
+
+
+<!-- Modal 1 -->
+<div class="modal" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="ModalLabel">BridgetownGIG</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/FullScreen1.jpg" alt="Bridgetowngig screenshot desktop and mobile">
+        <p>BridgetownGIG is an AngularJS job board application with filtering and CRUD operations using the MEAN stack. The site uses client-side filtering for quick sorting and browsing.</p>
+        <p><strong>Role: </strong>Design and Development (incl. logo)</p>
+        
+      </div>
+      
+      <div class="modal-footer text-center">
+        <ul>
+          <li>AngularJS</li>
+          <li>Node.js</li>
+          <li>MongoDB</li>
+          <li>Express</li>
+        </ul> 
+      </div>
+      <div>
+        <div class="item-btm">
+          <div><a href="http://bridgetowngigs.herokuapp.com/" target="_blank"><span>See Live Site</span></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="ModalLabel">TaqueriaCrawl</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/FullScreen2.jpg" alt="TaqueriaCrawl screenshot desktop and mobile">
+        <p>TaqueriaCrawl enables anyone to publish and review taqueria restaurants in Portland.</p>
+        <p>The site includes authentication and data storage using a backend with Node.js and MongoDB while Zurb Foundation styles the UI.</p>
+        <p><strong>Role: </strong>Design and Development</p>
+      </div>
+      
+      <div class="modal-footer text-center">
+        <ul>
+          <li>Node.js</li>
+          <li>MongoDB</li>
+          <li>Express</li>
+        </ul> 
+      </div>
+      <div>
+        <div class="item-btm">
+          <div><a href="http://taqueriacrawl.herokuapp.com/" target="_blank"><span>See Live Site</span></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="ModalLabel">Surf Tour Company</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/FullScreen3.jpg" alt="Surf Tour Company screenshot desktop and mobile">
+        <p>Surf Tour Company is an example marketing site built with Bootstrap and a mobile-friendly grid layout.</p>
+        <p>Full-screen images draw attention and inspire users to plan a surfing adventure.</p>
+        <p><strong>Role: </strong>Design and Development</p>
+      </div>
+      
+      <div class="modal-footer text-center">
+        <ul>
+          <li>HTML</li>
+          <li>CSS Frameworks</li>
+        </ul> 
+      </div>
+      <div>
+        <div class="item-btm">
+          <div><a href="/surftour" target="_blank"><span>See Live Site</span></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="ModalLabel">WebGurus</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/FullScreen4.jpg" alt="Webgurus screenshot desktop and mobile">
+        <p>WebGurus is an example marketing landing page created to showcase contemporary site design and layout.</p>
+        <p>The site uses custom CSS to create an attractive and professional design.</p>
+        <p><strong>Role: </strong>Design and Development (incl. logo)</p>
+      </div>
+      
+      <div class="modal-footer text-center">
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul> 
+      </div>
+      <div>
+        <div class="item-btm">
+          <div><a href="/webgurus/" target="_blank"><span>See Live Site</span></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5 -->
+<div class="modal" id="Modal5" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="ModalLabel">AJAX fun</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/FullScreen5.jpg" alt="AJAX fun screenshot desktop and mobile">
+        <p>AJAX Fun is a location-driven page that makes use of Geolocation, WalkScore, Flickr, and OpenWeather APIs.</p>
+        <p><strong>Role: </strong>Design and Development</p>
+      </div>
+      
+      <div class="modal-footer text-center">
+        <ul>
+          <li>JavaScript</li>
+          <li>AJAX/jQuery</li>
+        </ul> 
+      </div>
+      <div>
+        <div class="item-btm">
+          <div><a href="/ajax/" target="_blank"><span>See Live Site</span></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -14,15 +14,17 @@ nav a.active          {border-top: red;
 
 .resume a             {color: black;}
 
-#projects             {background: #EEEFE5;}
+#projects             {background: #f0f0f0;}
 
-.grid-item            {background: white;}
+.grid-item            {background: #fbfbfb}
 
-.item-btm span        {background: gray;
+
+.item-btm             {color: rgb(90,90,90);}
+
+.item-btm span        {background: lightgray;
                        color: black;}
 
-a:hover, a:visited    {color:black;
-}
+a:hover, a:visited    {color:black;}
 
 .item-btm span:hover {background: red;
                       color: white;}
@@ -30,19 +32,19 @@ a:hover, a:visited    {color:black;
 .overlay              {background: rgba(0,0,0,.70);}
 .overlay h2           {color: #FFF}
 .overlay h3           {color: #cfcfcf;}
-.overlay li           {color: #FFF;
+.overlay li, .modal li{color: #FFF;
                        background: red;}
 
 /***************
 GENERAL STYLES
 *****************/
 html,body {
+  font-family: 'Open Sans', sans-serif;
   height:100%;
   margin:0;
 }
 
 body {
-  font-family: 'Merriweather', sans-serif;
   text-align: center;
 }
 
@@ -70,8 +72,10 @@ p {
   text-align: center;
 }
 
+
 h2 {
   font-weight: normal;
+  
   text-align: center;
   line-height: 1.5em;
 }
@@ -102,7 +106,11 @@ nav.main ul {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
-  /*zoom: 1;*/
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 10px;
   display: block;
   border-top: 2px solid;
   text-align: center;
@@ -111,7 +119,7 @@ nav.main ul {
 
 nav.main li {
   display:inline-block;
-  margin-right: 5px;
+  margin-right: 2px;
   padding-bottom: 0px;
 }
 
@@ -120,6 +128,7 @@ nav.main a {
   text-transform: uppercase;
   padding-top: 5px;
   padding-bottom: 0;
+
 }
 
 nav.main a:hover {
@@ -139,21 +148,22 @@ INTRO SECTION
 ***********************/
 
 h1 {
-	font-size: 2.0em;
+	font-size: 1.7em;
 	text-align: center;
   margin-top: 35px;
-  margin-bottom: 29px;
+  margin-bottom: 20px;
+  color: #2c3e50;
 }
 
 h2 {
-	font-size: 1em;
+	font-size: 0.80em;
 }
 
 #photo {
   display: block;
   width: 120px;
   height: 120px;
-  margin: 50px auto 0px;
+  margin: 25px auto 0px;
   border-radius: 50%;  
 }
 
@@ -192,20 +202,17 @@ h2 {
 /***********************************
 PROJECTS PORTFOLIO
 ************************************/
+.container {
+  padding: 5%;
+}
 
 .container:before,
-.container:after,
-.container-fluid:before,
-.container-fluid:after,
-.row:before,
-.row:after {
+.container:after {
   content: " ";
   display: table;
 }
 .clearfix:after,
-.container:after,
-.container-fluid:after,
-.row:after {
+.container:after {
   clear: both;
 }
 
@@ -215,7 +222,7 @@ PROJECTS PORTFOLIO
 
 .grid-item {
   width: 84%;
-  border-radius: 2%; 
+  border-radius: 8px; 
   padding: 0;
   margin-left: 8%;
   margin-right: 8%;
@@ -223,32 +230,36 @@ PROJECTS PORTFOLIO
   margin-bottom: 13px;
   text-align: center;
   display: inline-block;
+  box-shadow: 0 1px 3px #7F7F7F;;
 }
 
 .grid-item img {
-  min-height: 150px
-}
-
-.container {
-  padding: 5%;
+  min-height: 150px;
+  width: 100%;
+  border: 1px solid #EBEBEB
+  
 }
 
 .item-top:hover img {
   transform: scale(1.5);
   transition:transform 3s linear;
+  border-top-left-radius:8px;
+  border-top-right-radius: 8px;
 }
 
 .item-top {
-  padding: 3px;
+  padding: 9px;
   background-position: center center;
   background-size: 364px 243px;
   overflow: hidden;
   position: relative;
+  border-top-left-radius:8px;
+  border-top-right-radius: 8px;
 }
 
 .item-btm {
-  font-size: 0.75em;
-  padding: 20px;
+  font-size: 0.9em;
+  padding: 15px;
   text-align: left
 }
 
@@ -265,8 +276,8 @@ PROJECTS PORTFOLIO
 .item-btm span {
   padding: 5px 10px 5px 10px;
   border-radius: 5%;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  
+  /*text-transform: uppercase;*/
 }
 
 .item-btm a {
@@ -282,9 +293,10 @@ PROJECTS PORTFOLIO
   width: 100%;
   height: 100%;
   text-align:center;
-  border-top-left-radius:2%;
-  border-top-right-radius: 2%;
+  border-top-left-radius:8px;
+  border-top-right-radius: 8px;
   opacity:0;
+  transition: all 0.7s;
 }
 
 .overlay h2  {
@@ -294,11 +306,11 @@ PROJECTS PORTFOLIO
 
 .overlay h3 {
   font-style:italic;
-  font-size:1em;
+  font-size: 0.9em;
   margin-bottom: 1em;
 }
 
-.overlay li {
+.overlay li, .modal li {
   line-height: 32px;
   display: inline;
   border-radius: 4px;
@@ -309,6 +321,56 @@ PROJECTS PORTFOLIO
 .item-top:hover .overlay {
   opacity:1;
 }
+
+/* MODALS */
+
+
+
+.modal-footer {
+  text-align:center;
+  padding: 8px;
+}
+.modal li {  
+  font-size: 0.8em;
+  padding: 3px 3px;
+}
+
+.modal-body p {
+  font-size: 0.8em;
+  text-align: left;
+  margin-top: 10px;
+  /*color: rgb(90,90,90);*/
+}
+
+.modal-content {
+  padding: 3px;
+}
+
+#close {
+  text-align: right;
+}
+
+.close {
+  float: right;
+  margin-top: -2px;
+  border: 0;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
+}
+
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
 
 /************************************
 CONTACT SECTION
@@ -340,3 +402,5 @@ Google Maps
   max-width: 1000px;
   height: 210px;
 }
+
+
