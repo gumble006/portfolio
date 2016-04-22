@@ -17,6 +17,10 @@ nav a.active          {border-top: red;
 
 .resume a:hover       {color: black;}
 
+#contactlink {color: inherit;}
+
+#contactlink:hover    {font-weight: bold;}
+
 #projects             {background: #f7f7f7;}
 
 .grid-item            {background: #fbfbfb}
@@ -27,7 +31,7 @@ nav a.active          {border-top: red;
 .item-btm span        {background: lightgray;
                        color: black;}
 
-a:hover, a:visited    {color:black;}
+/*a:hover, a:visited    {color:black;}*/
 
 .item-btm span:hover {background: red;
                       color: white;}
@@ -53,7 +57,6 @@ body {
 
 a, a:visited {
   text-decoration: none;
-  color: initial;
 }
 
 img {
@@ -160,7 +163,6 @@ INTRO SECTION
 
 #photo {
   display: block;
-  background-color: black;
   width: 120px;
   height: 120px;
   margin: 25px auto;
@@ -401,7 +403,7 @@ Google Maps
 
 #map {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   max-width: 1000px;
   height: 210px;
 }

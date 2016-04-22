@@ -43,6 +43,10 @@ div.wrapper {
   padding: 0 3%;
 }
 
+.modal li, .modal-body p {
+  font-size: 1em;
+}
+
 h1{
   font-size: 1.9em;
 }

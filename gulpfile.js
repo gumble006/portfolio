@@ -10,7 +10,8 @@ var   gulp = require('gulp'),
 gulp.task("concatJS", function(){
 	return gulp.src([
 		'js/jquery.min.js',
-		'js/bootstrap.min.js', 
+		'js/bootstrap.min.js',
+		'js/googlemapsapi.js', 
 		'js/script.js'])
 	.pipe(concat("scriptbundle.js"))
 	.pipe(gulp.dest("js"));
@@ -45,4 +46,4 @@ gulp.task('watch', function() {
   gulp.watch('js/*.js', ['minifyJS']);
 });
 
-gulp.task('default', ['minifyJS', 'minifyCSS', 'watch']);
+gulp.task('default', ['minifyJS', 'minifyCSS']);
