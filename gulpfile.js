@@ -40,4 +40,9 @@ gulp.task("minifyCSS", ["concatCSS"], function(){
 		.pipe(gulp.dest('css'));
 });
 
-gulp.task('default', ['minifyJS', 'minifyCSS']);
+gulp.task('watch', function() {
+  gulp.watch('css/*.css', ['minifyCSS']);
+  gulp.watch('js/*.js', ['minifyJS']);
+});
+
+gulp.task('default', ['minifyJS', 'minifyCSS', 'watch']);

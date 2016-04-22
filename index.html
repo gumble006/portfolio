@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head> 
     <meta charset="utf-8">
     <title>Greg Adams | Web Development</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,500,700' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/stylesbundle.min.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="//maps.googleapis.com/maps/api/js" defer></script>
+    <script src="js/scriptbundle.min.js" defer></script>
   </head>
   <body>
   
   <!-- ==============================================
     Intro
     =============================================== -->
-  <div id="home" class="window">
+  <div id="home">
     <div id="banner-home">
     </div>
   
     <div class="wrapper">
       <h1>Greg Adams</h1>
       
-      <h2>I am a web developer in the Portland, OR area. I enjoy building responsive and user-friendly web applications and sites.  If you are looking to improve your presence on the web you can contact me <a href="#contact">here.</a></h2>
+      <h2>I am a web developer in Portland, OR. I enjoy building responsive and user-friendly web applications and sites.  If you are looking to improve your presence on the web you can <a href="#contact" id="contactlink">contact me.</a></h2>
 
       <h2>I have a diverse set of skills, ranging from design and development (HTML, CSS, JavaScript), all the way to back-end development using open-source technologies (i.e. Node.js/Express/MongoDB) and Linux.
       </h2>
-      <img src="img/Greg.png" id="photo" alt="Greg Adams photo">
+      <img src="img/Greg2.png" id="photo" alt="Greg Adams photo">
       <div class="resume">
-        <h3><a href="/Adams-Resume-Apr2016.pdf">VIEW RESUME</a> | <a href="https://github.com/gumble006">GITHUB</a></h3><br>
+        <h3><a href="/Adams-Resume-Apr2016.pdf"><i class="fa fa-file-text" aria-hidden="true"></i> View Resume</a>  |  <a href="https://github.com/gumble006"><i class="fa fa-code-fork" aria-hidden="true"></i> Github</a></h3><br>
       </div>
     </div>
     
@@ -45,7 +49,7 @@
     Projects
     =============================================== -->
   
-  <div id="projects" class="window container">
+  <div id="projects" class="container">
         
         <h1>Projects.</h1>
         
@@ -165,12 +169,13 @@
     Contact page
     =============================================== -->
 
-  <div id="contact" class="window">
+  <div id="contact">
     <div class="wrapper">
-    <h1>Contact.</h1>
+      <h1>Contact.</h1>
     </div>
 
     <div id="map"></div>
+
     <div class="wrapper">
     <h2 class="contactinfo">The fastest way to get in touch with me is by email.  I will try my best to respond to your email in less than 24 hours.</h2>
     <h3 class="contactinfo">adamsgreg100 -at- gmail.com</h3>
@@ -178,10 +183,7 @@
     </div>
   </div>  
 
-  </body>
-  <script src="js/scriptbundle.min.js"></script>
-  <script src="//maps.googleapis.com/maps/api/js"></script>
-</html>
+
 
 
 
@@ -192,18 +194,17 @@
 
 
 <!-- Modal 1 -->
-<div class="modal" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
+<div class="modal" id="Modal1" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="ModalLabel">BridgetownGIG</h4>
+        <h4 class="modal-title" id="ModalLabel1">BridgetownGIG</h4>
       </div>
       <div class="modal-body">
         <img src="img/FullScreen1.jpg" alt="Bridgetowngig screenshot desktop and mobile">
         <p>BridgetownGIG is an AngularJS job board application with filtering and CRUD operations using the MEAN stack. The site uses client-side filtering for quick sorting and browsing.</p>
         <p><strong>Role: </strong>Design and Development (incl. logo)</p>
-        
       </div>
       
       <div class="modal-footer text-center">
@@ -223,13 +224,14 @@
   </div>
 </div>
 
+
 <!-- Modal 2 -->
-<div class="modal" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
+<div class="modal" id="Modal2" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="ModalLabel">TaqueriaCrawl</h4>
+        <h4 class="modal-title" id="ModalLabel2">TaqueriaCrawl</h4>
       </div>
       <div class="modal-body">
         <img src="img/FullScreen2.jpg" alt="TaqueriaCrawl screenshot desktop and mobile">
@@ -255,12 +257,12 @@
 </div>
 
 <!-- Modal 3 -->
-<div class="modal" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
+<div class="modal" id="Modal3" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="ModalLabel">Surf Tour Company</h4>
+        <h4 class="modal-title" id="ModalLabel3">Surf Tour Company</h4>
       </div>
       <div class="modal-body">
         <img src="img/FullScreen3.jpg" alt="Surf Tour Company screenshot desktop and mobile">
@@ -285,12 +287,12 @@
 </div>
 
 <!-- Modal 4 -->
-<div class="modal" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
+<div class="modal" id="Modal4" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="ModalLabel">WebGurus</h4>
+        <h4 class="modal-title" id="ModalLabel4">WebGurus</h4>
       </div>
       <div class="modal-body">
         <img src="img/FullScreen4.jpg" alt="Webgurus screenshot desktop and mobile">
@@ -316,12 +318,12 @@
 </div>
 
 <!-- Modal 5 -->
-<div class="modal" id="Modal5" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
+<div class="modal" id="Modal5" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="ModalLabel">AJAX fun</h4>
+        <h4 class="modal-title" id="ModalLabel5">AJAX fun</h4>
       </div>
       <div class="modal-body">
         <img src="img/FullScreen5.jpg" alt="AJAX fun screenshot desktop and mobile">
@@ -343,3 +345,7 @@
     </div>
   </div>
 </div>
+
+
+</body>
+</html>

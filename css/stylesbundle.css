@@ -888,6 +888,7 @@ img {
 /*************************
 COLORS
 **************************/
+h1                    {color: #2c3e50;}
 
 nav.main ul           {border-color: black; 
                        background: rgba(0,0,0,0.7);}
@@ -899,9 +900,11 @@ nav a, nav a:visited  {color: white;}
 nav a.active          {border-top: red;
                        color: red;}
 
-.resume a             {color: black;}
+.resume a             {color: rgb(40,40,40)}
 
-#projects             {background: #f0f0f0;}
+.resume a:hover       {color: black;}
+
+#projects             {background: #f7f7f7;}
 
 .grid-item            {background: #fbfbfb}
 
@@ -916,7 +919,7 @@ a:hover, a:visited    {color:black;}
 .item-btm span:hover {background: red;
                       color: white;}
 
-.overlay              {background: rgba(0,0,0,.70);}
+.overlay              {background: rgba(0,0,0,.60);}
 .overlay h2           {color: #FFF}
 .overlay h3           {color: #cfcfcf;}
 .overlay li, .modal li{color: #FFF;
@@ -937,6 +940,7 @@ body {
 
 a, a:visited {
   text-decoration: none;
+  color: initial;
 }
 
 img {
@@ -959,12 +963,18 @@ p {
   text-align: center;
 }
 
+h1 {
+  font-size: 1.9em;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
 
 h2 {
-  font-weight: normal;
-  
-  text-align: center;
-  line-height: 1.5em;
+  font-weight: 500;
+  text-align: left;
+  font-size: 0.9em;
+  line-height: 1.7;
 }
 
 div.wrapper {
@@ -972,6 +982,7 @@ div.wrapper {
   margin: 0 auto;
   padding: 0 6%;  
 }
+
 
 
 /*************************
@@ -1034,57 +1045,47 @@ nav a.active  {
 INTRO SECTION
 ***********************/
 
-h1 {
-	font-size: 1.7em;
-	text-align: center;
-  margin-top: 35px;
-  margin-bottom: 20px;
-  color: #2c3e50;
-}
-
-h2 {
-	font-size: 0.80em;
-}
-
 #photo {
   display: block;
+  background-color: black;
   width: 120px;
   height: 120px;
-  margin: 25px auto 0px;
+  margin: 25px auto;
   border-radius: 50%;  
 }
+
 
 #home {
   background: url(../img/photo.jpg);
   background-position:center center;
   background-size: cover;
   padding-top: 0px;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   background-attachment: fixed;
 }
 
 .resume {
   text-align: center;
-  margin: 0;
   font-size: .75em;  
 }
 
-.resume a {
-  font-weight: normal;
-}
-
-.resume a:hover {
+#contactlink:hover{
   font-weight: bold;
 }
+
+/*.resume a {
+  font-weight: normal;
+}*/
 
 #banner-home {
   width: 100%;
   background: url(../img/banner-contact.jpg) no-repeat left top/cover;
-  height: 4%;
-  opacity: .9;
+  height: 40px;
   display: block;
 }
+
+
 
 /***********************************
 PROJECTS PORTFOLIO
@@ -1108,11 +1109,11 @@ PROJECTS PORTFOLIO
 }
 
 .grid-item {
-  width: 84%;
+  width: 95%;
   border-radius: 8px; 
   padding: 0;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 0;
+  margin-right: 0;
   margin-top: 13px;
   margin-bottom: 13px;
   text-align: center;
@@ -1128,8 +1129,9 @@ PROJECTS PORTFOLIO
 }
 
 .item-top:hover img {
-  transform: scale(1.5);
-  transition:transform 3s linear;
+  transform: scale(1.1);
+  /*transition:transform 3s linear;*/
+  transition: all .3s linear ;
   border-top-left-radius:8px;
   border-top-right-radius: 8px;
 }
@@ -1183,12 +1185,14 @@ PROJECTS PORTFOLIO
   border-top-left-radius:8px;
   border-top-right-radius: 8px;
   opacity:0;
-  transition: all 0.7s;
+  transition: all 0.2s;
+
 }
 
 .overlay h2  {
   font-weight:900;
   font-size:1.3em;
+  text-align: center;
 }
 
 .overlay h3 {
@@ -1226,7 +1230,6 @@ PROJECTS PORTFOLIO
   font-size: 0.8em;
   text-align: left;
   margin-top: 10px;
-  /*color: rgb(90,90,90);*/
 }
 
 .modal-content {
@@ -1264,14 +1267,14 @@ CONTACT SECTION
 *************************************/
 
 #contact {
-  background: url(../img/furley_bg.png);
+  background: url(../img/contact2.jpg);
   padding-top: 5px;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
 }
 
 .contactinfo {
-  margin: 30px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 h3.contactinfo {
@@ -1293,13 +1296,13 @@ Google Maps
 
 
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 550px) {
 
 .grid-item {
-	width: 43%;
+	width: 46%;
 	float: left;
-	margin-left: 3%;
-	margin-right: 3%;
+	margin-left: 2%;
+	margin-right: 2%;
 }
 
 .grid-item:nth-child(2n+1) {
@@ -1325,9 +1328,16 @@ Google Maps
 @media screen and (min-width: 700px) {
  
 
+#photo {
+  margin: 35px auto;
+}
 
-#wrapper {
-  padding: 0 20%;  
+#banner-home {
+  height: 45px;
+}
+
+div.wrapper {
+  padding: 0 3%;
 }
 
 h1{
@@ -1336,7 +1346,7 @@ h1{
 
 h2 {
 	padding-top: 10px;
-	font-size: 1.1em;
+	font-size: 1em;
 }
     
 #map {
