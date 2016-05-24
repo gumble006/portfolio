@@ -888,10 +888,10 @@ img {
 /*************************
 COLORS
 **************************/
-h1                    {color: #2c3e50;}
+h1                    {color: rgb(45,45,45);}
 
 nav.main ul           {border-color: black; 
-                       background: rgba(0,0,0,0.7);}
+                       background: rgba(0,0,0,0.85);}
 
 nav.main a:hover      {color: red;}
 
@@ -900,11 +900,13 @@ nav a, nav a:visited  {color: white;}
 nav a.active          {border-top: red;
                        color: red;}
 
-.resume a             {color: rgb(40,40,40)}
+.resume a             {color: rgb(45,45,45);}
 
 .resume a:hover       {color: black;}
 
-#contactlink {color: inherit;}
+#contact              {background-color: #c5ccd4;}
+
+#contactlink          {color: inherit;}
 
 #contactlink:hover    {font-weight: bold;}
 
@@ -928,6 +930,8 @@ nav a.active          {border-top: red;
 .overlay h3           {color: #cfcfcf;}
 .overlay li, .modal li{color: #FFF;
                        background: red;}
+
+.modal-title          {color: rgb(45,45,45);}
 
 /***************
 GENERAL STYLES
@@ -976,12 +980,12 @@ h1 {
 h2 {
   font-weight: 500;
   text-align: left;
-  font-size: 0.9em;
+  font-size: 0.95em;
   line-height: 1.7;
 }
 
 div.wrapper {
-  max-width: 650px;
+  /*max-width: 650px;*/
   margin: 0 auto;
   padding: 0 6%;  
 }
@@ -1004,14 +1008,9 @@ nav.main {
 }
 
 nav.main ul {
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
-  margin-top: 10px;
   display: block;
   border-top: 2px solid;
   text-align: center;
@@ -1057,8 +1056,8 @@ INTRO SECTION
 }
 
 
-#home {
-  background: url(../img/photo.jpg);
+div#home {
+  background: url(../img/3a.jpg);
   background-position:center center;
   background-size: cover;
   padding-top: 0px;
@@ -1072,19 +1071,20 @@ INTRO SECTION
   font-size: .75em;  
 }
 
+#contactlink {
+  text-decoration: underline;
+}
+
 #contactlink:hover{
   font-weight: bold;
 }
 
-/*.resume a {
-  font-weight: normal;
-}*/
-
 #banner-home {
   width: 100%;
-  background: url(../img/banner-contact.jpg) no-repeat left top/cover;
-  height: 40px;
+  background: url(../img/green-dk.jpg) no-repeat left top/cover;
+  height: 32px;
   display: block;
+  border-bottom: 2px solid black;
 }
 
 
@@ -1093,7 +1093,7 @@ INTRO SECTION
 PROJECTS PORTFOLIO
 ************************************/
 .container {
-  padding: 5%;
+  padding: 4%;
 }
 
 .container:before,
@@ -1187,28 +1187,38 @@ PROJECTS PORTFOLIO
   border-top-left-radius:8px;
   border-top-right-radius: 8px;
   opacity:0;
-  transition: all 0.2s;
-
+  transition: all 0.3s ease-in-out;
+  padding: 5px;
 }
 
 .overlay h2  {
   font-weight:900;
-  font-size:1.3em;
+  font-size: 1.4em;
   text-align: center;
+  margin: 0 0 7px 0;
+  line-height: 1.1em;
 }
 
 .overlay h3 {
   font-style:italic;
   font-size: 0.9em;
-  margin-bottom: 1em;
+  margin: 0;
+
 }
 
 .overlay li, .modal li {
   line-height: 32px;
   display: inline;
   border-radius: 4px;
-  font-size: .7em;
+  font-size: .8em;
   padding: 2px 4px;
+}
+
+.overlay-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .item-top:hover .overlay {
@@ -1269,7 +1279,7 @@ CONTACT SECTION
 *************************************/
 
 #contact {
-  background: url(../img/contact2.jpg);
+  /*background: url(../img/contact3.jpg);*/
   padding-top: 5px;
   min-height: 100vh;
   margin: 0;
@@ -1298,7 +1308,7 @@ Google Maps
 
 
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 580px) {
 
 .grid-item {
 	width: 46%;
@@ -1311,31 +1321,29 @@ Google Maps
   clear:left;
 }
 
-.overlay h2  {
-  font-size:1.2em;
-}
-
 .overlay h3 {
-  font-size:0.8em;
+  font-size: 1em;
   margin-bottom: 1em;
 }
 
 .overlay li {
-  font-size: 0.7em;
   padding: 2px 4px;
 }
 
 }
 
-@media screen and (min-width: 700px) {
- 
+@media screen and (min-width: 760px) {
+
+div.wrapper {
+  max-width: 70%;
+}
 
 #photo {
   margin: 35px auto;
 }
 
 #banner-home {
-  height: 45px;
+  height: 32px;
 }
 
 div.wrapper {
@@ -1354,6 +1362,10 @@ h2 {
 	padding-top: 10px;
 	font-size: 1em;
 }
+
+.resume h3 {
+  font-size: 1.3em;
+}
     
 #map {
 	max-width: 700px;
@@ -1366,7 +1378,11 @@ h2 {
 
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 880px) {
+
+div.wrapper {
+  max-width: 50%;
+}
 
 .grid-item {
 	width: 30%;
@@ -1382,17 +1398,16 @@ h2 {
   clear:left;
 }
 
+.overlay li {
+  font-size: 0.8em;
+}
+
 .overlay h2  {
   font-size:1.3em;
 }
 
 .overlay h3 {
-  font-size:1em;
   margin-bottom: 0.5em;
 }
 
-.overlay li {
-  font-size: .7em;
-  padding: 2px 4px;
-}
 }

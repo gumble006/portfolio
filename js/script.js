@@ -293,8 +293,8 @@ $(window).on('scroll', function () {
 });
 
 nav.find('a').on('click', function () {
-  var $el = $(this)
-    , id = $el.attr('href');
+  var $el = $(this),
+       id = $el.attr('href');
   return false;
 });
 

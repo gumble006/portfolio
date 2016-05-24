@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 580px) {
 
 .grid-item {
 	width: 46%;
@@ -12,31 +12,29 @@
   clear:left;
 }
 
-.overlay h2  {
-  font-size:1.2em;
-}
-
 .overlay h3 {
-  font-size:0.8em;
+  font-size: 1em;
   margin-bottom: 1em;
 }
 
 .overlay li {
-  font-size: 0.7em;
   padding: 2px 4px;
 }
 
 }
 
-@media screen and (min-width: 700px) {
- 
+@media screen and (min-width: 760px) {
+
+div.wrapper {
+  max-width: 70%;
+}
 
 #photo {
   margin: 35px auto;
 }
 
 #banner-home {
-  height: 45px;
+  height: 32px;
 }
 
 div.wrapper {
@@ -55,6 +53,10 @@ h2 {
 	padding-top: 10px;
 	font-size: 1em;
 }
+
+.resume h3 {
+  font-size: 1.3em;
+}
     
 #map {
 	max-width: 700px;
@@ -67,7 +69,11 @@ h2 {
 
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 880px) {
+
+div.wrapper {
+  max-width: 50%;
+}
 
 .grid-item {
 	width: 30%;
@@ -83,17 +89,16 @@ h2 {
   clear:left;
 }
 
+.overlay li {
+  font-size: 0.8em;
+}
+
 .overlay h2  {
   font-size:1.3em;
 }
 
 .overlay h3 {
-  font-size:1em;
   margin-bottom: 0.5em;
 }
 
-.overlay li {
-  font-size: .7em;
-  padding: 2px 4px;
-}
 }
