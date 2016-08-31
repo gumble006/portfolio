@@ -13,11 +13,13 @@ nav a, nav a:visited  {color: white;}
 nav a.active          {border-top: red;
                        color: red;}
 
+#bio                  {background-color: rgba(256,256,256,0.3);}
+  
 .resume a             {color: rgb(45,45,45);}
 
 .resume a:hover       {color: black;}
 
-#contact              {background-color: #c5ccd4;}
+#contact              {background-color: #d2d1d6;}
 
 #contactlink          {color: inherit;}
 
@@ -53,6 +55,12 @@ html,body {
   font-family: 'Open Sans', sans-serif;
   height:100%;
   margin:0;
+}
+
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -159,12 +167,19 @@ nav a.active  {
 /**********************
 INTRO SECTION
 ***********************/
+#banner-home {
+  width: 100%;
+  background: url(../img/green-dk-2.jpg) center center;
+  height: 32px;
+  display: block;
+  border-bottom: 1px solid black;
+}
 
 #photo {
   display: block;
   width: 120px;
   height: 120px;
-  margin: 25px auto;
+  margin: 20px auto;
   border-radius: 50%;  
 }
 
@@ -184,6 +199,16 @@ div#home {
   font-size: .75em;  
 }
 
+#bio {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#bio h2 {
+  margin: 0;
+  padding: 0;
+}
+
 #contactlink {
   text-decoration: underline;
 }
@@ -191,16 +216,6 @@ div#home {
 #contactlink:hover{
   font-weight: bold;
 }
-
-#banner-home {
-  width: 100%;
-  background: url(../img/green-dk.jpg) no-repeat left top/cover;
-  height: 32px;
-  display: block;
-  border-bottom: 2px solid black;
-}
-
-
 
 /***********************************
 PROJECTS PORTFOLIO
@@ -306,10 +321,12 @@ PROJECTS PORTFOLIO
 
 .overlay h2  {
   font-weight:900;
+  opacity: 0;
   font-size: 1.4em;
   text-align: center;
   margin: 0 0 7px 0;
   line-height: 1.1em;
+  transition: all .4s ease-in-out;
 }
 
 .overlay h3 {
@@ -334,13 +351,12 @@ PROJECTS PORTFOLIO
   transform: translate(-50%, -50%);
 }
 
-.item-top:hover .overlay {
+.item-top:hover .overlay,
+.item-top:hover h2 {
   opacity:1;
 }
 
 /* MODALS */
-
-
 
 .modal-footer {
   text-align:center;
