@@ -1,7 +1,10 @@
 /*************************
 COLORS
 **************************/
+#banner-home          {background:rgba(0,0,0,0.85);}
 h1                    {color: rgb(45,45,45);}
+#name                 {color:whitesmoke;
+                       text-shadow: 1px 1px 2px rgba(15, 15, 15, 1);}
 
 nav.main ul           {border-color: black; 
                        background: rgba(0,0,0,0.85);}
@@ -13,13 +16,14 @@ nav a, nav a:visited  {color: white;}
 nav a.active          {border-top: red;
                        color: red;}
 
-#bio                  {background-color: rgba(256,256,256,0.3);}
+#bio                  {background-color: rgba(256,256,256,0.7);}
   
-.resume a             {color: rgb(45,45,45);}
+.resume a             {color: whitesmoke;
+                      text-shadow: 2px 1px 1px rgba(15, 15, 15, 0.9);}
 
-.resume a:hover       {color: black;}
+.resume a:hover       {color: darkgray;}
 
-#contact              {background-color: #d2d1d6;}
+#contact              {background-color: #d3d3d3;}
 
 #contactlink          {color: inherit;}
 
@@ -94,7 +98,7 @@ p {
 h1 {
   font-size: 1.9em;
   text-align: center;
-  margin-top: 35px;
+  margin-top: 2em;
   margin-bottom: 30px;
 }
 
@@ -120,7 +124,8 @@ nav.main {
   height: 50px;
   position: fixed;
   width: 100%;
-  bottom: 0px;
+  /*bottom: 0px;*/
+  top:0;
   left: 0px;
   z-index: 999;
   padding: 0px;
@@ -131,9 +136,9 @@ nav.main {
 nav.main ul {
   width: 100%;
   position: fixed;
-  bottom: 0;
+  top: 0;
   display: block;
-  border-top: 2px solid;
+  /*border-top: 2px solid;*/
   text-align: center;
   padding: 0px 0px 0px 0px;
 }
@@ -149,7 +154,6 @@ nav.main a {
   text-transform: uppercase;
   padding-top: 5px;
   padding-bottom: 0;
-
 }
 
 nav.main a:hover {
@@ -169,34 +173,38 @@ INTRO SECTION
 ***********************/
 #banner-home {
   width: 100%;
-  background: url(../img/green-dk-2.jpg) center center;
   height: 32px;
   display: block;
-  border-bottom: 1px solid black;
 }
 
 #photo {
   display: block;
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   margin: 20px auto;
   border-radius: 50%;  
 }
 
 
 div#home {
-  background: url(../img/3a.jpg);
-  background-position:center center;
-  background-size: cover;
+  
+  background-image: url(../img/122c.jpg);
+  background-repeat: no-repeat;
+  background-position: center 100%;
+  background-width: 100% auto;
+  background-color: darkgray;
   padding-top: 0px;
   min-height: 100vh;
   margin: 0;
-  background-attachment: fixed;
+}
+
+#name {
+  margin-top:2em;
 }
 
 .resume {
   text-align: center;
-  font-size: .75em;  
+  font-size: .90em;  
 }
 
 #bio {
@@ -414,6 +422,10 @@ CONTACT SECTION
   margin: 0;
 }
 
+#contact a {
+  color:initial;
+}
+
 .contactinfo {
   margin: 20px 0 0 0;
 }
@@ -423,6 +435,10 @@ h3.contactinfo {
   font-size: 1.0em;
 }
 
+#photocredit {
+  font-size:70%;
+  margin-top:5px;
+}
 /***************
 Google Maps 
 *****************/

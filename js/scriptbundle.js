@@ -24,8 +24,10 @@ var mapCanvas = document.getElementById('map');
 var mapOptions = {
   center: new google.maps.LatLng(45.523034, -122.670846),
   zoom: 13,
+  draggable:false,
   scrollwheel: false,
-  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  mapTypeId: 'terrain',
+  
   styles: [
     {
         "featureType": "administrative",
@@ -263,6 +265,7 @@ var mapOptions = {
 
 var map = new google.maps.Map(mapCanvas, mapOptions)
 }
+
 
 google.maps.event.addDomListener(window, 'load', initialize);
 

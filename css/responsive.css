@@ -29,14 +29,28 @@ div.wrapper {
   max-width: 70%;
 }
 
+div#home {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+#name {
+  text-align: left;
+}
 #photo {
-  margin: 35px auto;
+  margin:2em;
+  margin-right:0;
+  float:left;
 }
-
-#banner-home {
+/*#banner-home {
   height: 32px;
+}*/
+.resume {
+  margin-top: 4.0em;
+  margin-left:0;
+  display: inline-block;
+  font-size: .8em;
 }
-
 div.wrapper {
   padding: 0 3%;
 }
@@ -72,7 +86,7 @@ h2 {
 @media screen and (min-width: 880px) {
 
 div.wrapper {
-  max-width: 50%;
+  max-width: 60%;
 }
 
 .grid-item {
