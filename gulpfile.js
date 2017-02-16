@@ -5,7 +5,8 @@ var   gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	uglify = require('gulp-uglify'),
 	cleancss = require('gulp-clean-css'),
-	rename = require('gulp-rename');
+	rename = require('gulp-rename'),
+	purify = require('gulp-purifycss');
 
 gulp.task("concatJS", function(){
 	return gulp.src([
@@ -23,6 +24,7 @@ gulp.task("minifyJS", ["concatJS"], function(){
 		.pipe(gulp.dest('js'));
 });
 
+//Concat and remove unused
 gulp.task("concatCSS", function(){
 	return gulp.src([
 		'css/normalize.css', 
@@ -30,11 +32,12 @@ gulp.task("concatCSS", function(){
 		'css/main.css',
 		'css/responsive.css'])
 	.pipe(concat("stylesbundle.css"))
+	.pipe(purify(['./index.html']))
 	.pipe(gulp.dest("css"));
 });
 
 gulp.task("minifyCSS", ["concatCSS"], function(){
-	return gulp.src("css/stylesbundle.css")
+	return gulp.src("./css/stylesbundle.css")
 		.pipe(cleancss())
 		.pipe(rename('stylesbundle.min.css'))
 		.pipe(gulp.dest('css'));

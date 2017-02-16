@@ -28,12 +28,10 @@
 div.wrapper {
   max-width: 70%;
 }
-
 div#home {
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
+  padding-bottom:55px;
 }
+
 #name {
   text-align: left;
 }
@@ -58,7 +56,9 @@ div.wrapper {
 .modal li, .modal-body p {
   font-size: 1em;
 }
-
+.modal-body img {
+  max-width: 440px;
+}
 h1{
   font-size: 1.9em;
 }

@@ -190,12 +190,16 @@ div#home {
   
   background-image: url(../img/122c.jpg);
   background-repeat: no-repeat;
-  background-position: center 100%;
-  background-width: 100% auto;
   background-color: darkgray;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
   padding-top: 0px;
-  min-height: 100vh;
+  height: auto;
+  min-height: 70vh;
   margin: 0;
+  padding-bottom: 20px;
+  
 }
 
 #name {
@@ -449,5 +453,3 @@ Google Maps
   max-width: 1000px;
   height: 210px;
 }
-
-

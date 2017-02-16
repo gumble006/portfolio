@@ -17,18 +17,18 @@ $('a[href^="#"]').on('click', function(event) {
 });
 
 // Google maps
+google.maps.event.addDomListener(window, 'load', initMap);
 
-function initialize() {
-
-var mapCanvas = document.getElementById('map');
-var mapOptions = {
-  center: new google.maps.LatLng(45.523034, -122.670846),
-  zoom: 13,
-  draggable:false,
-  scrollwheel: false,
-  mapTypeId: 'terrain',
-  
-  styles: [
+function initMap() {
+    var portland = {lat: 45.523034, lng: -122.670846};
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: portland,
+        zoom: 13,
+        draggable:false,
+        scrollwheel: false,
+        mapTypeId: 'terrain',
+        styles: [
     {
         "featureType": "administrative",
         "elementType": "labels.text.fill",
@@ -261,22 +261,16 @@ var mapOptions = {
         ]
     }
 ]
+
+    });
   }
-
-var map = new google.maps.Map(mapCanvas, mapOptions)
-}
-
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-
 
 
 // Changes nav bar "Active" attr. upon scroll
 
-var sections = $('div.window')
-  , nav = $('nav')
-  , nav_height = nav.outerHeight();
+var sections = $('div.window'), 
+nav = $('nav'), 
+nav_height = nav.outerHeight();
 
 $(window).on('scroll', function () {
   var cur_pos = $(this).scrollTop();

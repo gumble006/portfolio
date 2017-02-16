@@ -22,14 +22,14 @@
     <div class="wrapper">
       <h1 id="name">Greg Adams</h1>
       <div id="bio">
-        <h2>I am a web developer in Portland, OR. I enjoy building responsive and user-friendly web apps.  If you are looking to improve your presence on the web you can <a href="#contact" id="contactlink">contact me.</a></h2>
+        <h2>I am a web developer with with a range of technical skills who builds web applications using advanced JavaScript.  If you are looking to improve your presence on the web you can <a href="#contact" id="contactlink">contact me.</a></h2>
         <br>
-        <h2>I have a diverse set of skills, ranging from front-end design and development (HTML, CSS, JavaScript), all the way to back-end development using open-source libraries and frameworks (i.e. Node.js, MongoDB, Express) and Linux.</h2>
+        <h2>My work has included front-end design and development (JavaScript applications using React or Angular, CSS, HTML) all the way to back-end development using open-source libraries and frameworks (i.e. Node.js, MongoDB, Express) and Linux.  I've also done a variety of geospatial mapping (GIS) and urban research as an urban planner.</h2>
       </div>
       
       <img src="img/Greg2.png" id="photo" alt="Greg Adams photo">
       <div class="resume">
-        <h3><a href="/Adams-Resume-Oct2016.pdf"><i class="fa fa-file-text" aria-hidden="true"></i> View Resume</a>  |  <a href="https://github.com/gumble006"><i class="fa fa-code-fork" aria-hidden="true"></i> Github</a></h3><br>
+        <h3><a href="/Adams-Resume-Feb2017.pdf"><i class="fa fa-file-text" aria-hidden="true"></i> View Resume</a>  |  <a href="https://github.com/gumble006"><i class="fa fa-code-fork" aria-hidden="true"></i> Github</a></h3><br>
       </div>
     </div>
     
@@ -50,7 +50,53 @@
         
         <h1>Projects.</h1>
         
-        <div class="grid">  
+        <div class="grid">
+
+          <div class="grid-item">
+            <div class="item-top">
+              <a href="" data-toggle="modal" data-target="#Modal8">
+              <img src="img/Thumb-pdxrail.jpg" class="img-responsive" alt="Trip Budget Planning screenshot thumbnail">
+              <div class="overlay">
+                <div class="overlay-info">
+                  <h2>PDX Rail</h2>
+                  <h3>Web Mapping App</h3>
+                  <ul>
+                    <li>React.js</li>
+                    <li>Leaflet</li>
+                    <li>GeoJSON</li>
+                  </ul> 
+                </div>
+              </div></a>
+            </div>
+          
+            <div class="item-btm">  
+              <p>PDX Rail uses React and Leaflet.js to interactively map Portland's rail lines and stations.</p>
+              <br><div><a href="" data-toggle="modal" data-target="#Modal8"><span>More Info</span></a></div>
+            </div>
+          </div>  
+
+          <div class="grid-item">
+            <div class="item-top">
+              <a href="" data-toggle="modal" data-target="#Modal7">
+              <img src="img/Thumb-budget.jpg" class="img-responsive" alt="Trip Budget Planning screenshot thumbnail">
+              <div class="overlay">
+                <div class="overlay-info">
+                  <h2>Trip Budget Planner</h2>
+                  <h3>Web App</h3>
+                  <ul>
+                    <li>React.js</li>
+                    <li>Redux</li>
+                    <li>JavaScript</li>
+                  </ul> 
+                </div>
+              </div></a>
+            </div>
+          
+            <div class="item-btm">  
+              <p>Trip Budget Planner is a quick and easy web app to help users estimate future expenses.</p>
+              <br><div><a href="" data-toggle="modal" data-target="#Modal7"><span>More Info</span></a></div>
+            </div>
+          </div>  
 
           <div class="grid-item">
             <div class="item-top">
@@ -223,6 +269,65 @@
     MODALS**********************
     =============================================== -->
 
+<!-- Modal 8 -->
+<div class="modal" id="Modal8" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">PDX Rail</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/FullScreen8.jpg" alt="PDX Rail screenshot desktop and mobile">
+        <p>PDX Rail uses React and Leaflet.js to interactively map Portland's fixed rail lines and stations, allowing users to filter by line and identify individual stations.</p>
+        <p><strong>Role: </strong>Design and Development</p>
+      </div>
+      
+      <div class="modal-footer text-center">
+        <ul>
+            <li>React.js</li>
+            <li>Leaflet</li>
+            <li>GeoJSON</li>
+        </ul> 
+      </div>
+      <div>
+        <div class="item-btm">
+          <div><a href="https://pdxrail.herokuapp.com/" target="_blank"><span>See Live Site</span></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 7 -->
+<div class="modal" id="Modal7" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Trip Budget Planner</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/FullScreen7.jpg" alt="Trip Budget Planner screenshot desktop and mobile">
+        <p>Trip Budget Planner is a quick and easy web app to help users estimate future expenses.  Users can create their own custom items, expenses, and compute net expenses.</p>
+        <p><strong>Role: </strong>Design and Development</p>
+      </div>
+      
+      <div class="modal-footer text-center">
+        <ul>
+            <li>React.js</li>
+            <li>Redux</li>
+            <li>JavaScript</li>
+        </ul> 
+      </div>
+      <div>
+        <div class="item-btm">
+          <div><a href="https://reactivebudget.herokuapp.com/planner" target="_blank"><span>See Live Site</span></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Modal 6 -->
 <div class="modal" id="Modal6" tabindex="-1" role="dialog">
@@ -409,7 +514,7 @@
 
 <script src="//code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script src="//maps.googleapis.com/maps/api/js"></script>
+<script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArH_-SEOpI9rt21kaQDelD1-MsaUxz_4c"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
