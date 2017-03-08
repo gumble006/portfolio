@@ -177,9 +177,18 @@ code {
  * Address CSS quotes not supported in IE 6/7.
  */
 
+q {
+  quotes: none;
+}
+
 /**
  * Address `quotes` property not supported in Safari 4.
  */
+
+q:before,q:after {
+  content: '';
+  content: none;
+}
 
 /**
  * Address inconsistent and variable font size in all browsers.
@@ -813,7 +822,7 @@ div#home {
   background-size: cover;
   padding-top: 0px;
   height: auto;
-  min-height: 70vh;
+  min-height: 95vh;
   margin: 0;
   padding-bottom: 20px;
 }
