@@ -51,6 +51,7 @@ nav a.active          {border-top: red;
                        background: red;}
 
 .modal-title          {color: rgb(45,45,45);}
+.modal.in             {background-color: rgba(0,0,0,0.3)}
 
 /***************
 GENERAL STYLES
